@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Check, ArrowRight } from "lucide-react";
 import { WordsPullUpMultiStyle } from "./WordsPullUpMultiStyle";
 
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 const FeatureCard = ({ children, index, className = "" }: { children: ReactNode; index: number; className?: string }) => {
   const ref = useRef(null);
