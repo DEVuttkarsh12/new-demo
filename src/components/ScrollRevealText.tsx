@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 
 interface ScrollRevealTextProps {
@@ -6,7 +6,7 @@ interface ScrollRevealTextProps {
   className?: string;
 }
 
-const Char = ({ char, progress, scrollYProgress }: { char: string; progress: number; scrollYProgress: any }) => {
+const Char = ({ char, progress, scrollYProgress }: { char: string; progress: number; scrollYProgress: MotionValue<number> }) => {
   const opacity = useTransform(
     scrollYProgress,
     [progress - 0.1, progress + 0.05],

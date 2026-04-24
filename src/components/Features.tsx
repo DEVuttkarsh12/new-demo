@@ -3,7 +3,9 @@ import { useRef } from "react";
 import { Check, ArrowRight } from "lucide-react";
 import { WordsPullUpMultiStyle } from "./WordsPullUpMultiStyle";
 
-const FeatureCard = ({ children, index, className = "" }: any) => {
+import { ReactNode } from "react";
+
+const FeatureCard = ({ children, index, className = "" }: { children: ReactNode; index: number; className?: string }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 

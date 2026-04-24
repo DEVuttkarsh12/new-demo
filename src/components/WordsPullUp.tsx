@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
 interface WordsPullUpProps {
@@ -13,7 +13,7 @@ export const WordsPullUp = ({ text, className, showAsterisk }: WordsPullUpProps)
 
   const words = text.split(" ");
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -21,7 +21,7 @@ export const WordsPullUp = ({ text, className, showAsterisk }: WordsPullUpProps)
     }),
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       y: 0,
