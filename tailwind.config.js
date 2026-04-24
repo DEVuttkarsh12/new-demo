@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#DEDBC8",
+        primary: "#22d3ee",
       },
       fontFamily: {
-        sans: ['"Almarai"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Instrument Serif"', 'serif'],
+        sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
+
